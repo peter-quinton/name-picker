@@ -1,0 +1,40 @@
+{
+  "name": "name-picker",
+  "version": "0.0.0",
+  "description": "IZR",
+  "homepage": "https://github.com/peter-quinton/name-picker",
+  "private": true,
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:peter-quinton/name-picker.git"
+  },
+  "keywords": [
+    "holidays",
+    "pick",
+    "names"
+  ],
+  "config": {
+    "target": "build",
+    "targetjsDoc": "doc",
+    "targetjsDocDev": "doc-dev",
+    "targetBrowserify": "lib",
+    "targetBrowserifySource": "source",
+    "max_vcstag_length": 32,
+    "browserify": {
+      "externals": [
+        "lodash",
+        "class.extend",
+        "q"
+      ]
+    }
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.0.27",
+    "grunt": "^0.4.5",
+    "grunt-aws-sdk": "^0.2.1"
+  },
+  "license": "MIT"
+}
